@@ -1,61 +1,46 @@
+# MAD In-Class Activity 13 – Interactive Flutter Signup Adventure
 
-# Interactive Flutter Signup Adventure
+## Overview
 
-An engaging, interactive multi-step signup experience built in Flutter. This app goes beyond basic forms, offering animations, visual feedback, avatars, password strength meter, and celebratory confetti for a fun user experience.
+This project is an interactive, multi-step signup experience in Flutter that goes beyond basic forms. Users enjoy animations, avatar selection, password strength feedback, and celebratory confetti when completing signup.
 
----
+The goal is to enhance user experience through advanced Flutter widgets, animations, and state management.
 
-## **Features**
+## Features
 
-- **Animated Signup Form:** Smooth transitions and interactive validation.
-- **Avatar Selection:** Users can select from 3–5 fun avatars. Selected avatar is displayed on the welcome screen.
-- **Password Strength Meter:** Visual indicator changes color from red to green as the password strengthens.
-- **Progress Tracker:** Real-time progress bar with milestone messages:
-  - 25%: "Great start!"
-  - 50%: "Halfway there!"
-  - 75%: "Almost done!"
-  - 100%: "Ready for adventure!"
-- **Achievement Badges:** Awarded for:
-  - Strong passwords
-  - Early signup (before 12 PM)
-  - Completing all profile fields
-- **Confetti Celebration:** Fun animations when completing signup or reaching milestones.
-- **Animated Welcome Screen:** Personalized greeting with user’s name and avatar.
+### Core Features
 
----
+* Multi-step signup form with validation
+* Personalized welcome screen with animated greetings
+* Avatar selection (5 fun avatars)
+* Password strength validation
+* Date of birth selection via calendar picker
+* Real-time visual feedback during form completion
+* Confetti celebration on successful signup
 
-## **Screens**
+### Extra Features
 
-1. **Welcome Screen:** Animated landing page with “Start Adventure” button.
-2. **Signup Screen:** Interactive form with validation, avatar selection, and password visibility toggle.
-3. **Success Screen:** Personalized welcome with confetti celebration.
+* Animated buttons and form headers
+* Fade-in and scale animations on welcome screen
+* “More Celebration” button triggers confetti again
+* Snackbars for invalid actions
+* Custom error messages
 
----
+## Project Structure
 
-## **Installation**
-
-1. Clone the repository:
-
-```bash
-git clone https://github.com/bplpriya/MAD-Interactive-Flutter-Signup-Adventure.git
-cd MAD-Interactive-Flutter-Signup-Adventure
+```
+lib/
+ ├─ main.dart                # Entry point
+ ├─ screens/
+ │   ├─ signup_screen.dart
+ │   └─ success_screen.dart
+ ├─ widgets/
+ │   ├─ avatar_picker.dart
+ │   └─ custom_textfield.dart
+ └─ README.md
 ```
 
-2. Install dependencies:
-
-```bash
-flutter pub get
-```
-
-3. Run the app:
-
-```bash
-flutter run
-```
-
----
-
-## **Dependencies**
+## Dependencies
 
 ```yaml
 dependencies:
@@ -65,25 +50,38 @@ dependencies:
   confetti: ^0.7.0
 ```
 
----
+Install packages:
 
-## **Usage**
+```bash
+flutter pub get
+```
 
-1. Fill in the signup form fields: Name, Email, Password.
-2. Select a fun avatar.
-3. Watch your progress with the progress bar.
-4. Reach milestones to unlock badges.
-5. Submit the form to see the confetti celebration and personalized welcome screen.
+## Installation & Running
 
+1. Clone the repository:
 
----
+```bash
+git clone https://github.com/bplpriya/MAD-Interactive-Flutter-Signup-Adventure.git
+```
 
-## **GitHub Repository**
+2. Navigate to the project directory:
 
-[https://github.com/bplpriya/MAD-Interactive-Flutter-Signup-Adventure](https://github.com/bplpriya/MAD-Interactive-Flutter-Signup-Adventure)
+```bash
+cd signup_adventure
+```
 
----
+3. Fetch dependencies:
 
-## **License**
+```bash
+flutter pub get
+```
 
-This project is for educational purposes as part of a Flutter MAD class activity.
+4. Run the project:
+
+```bash
+flutter run
+```
+
+## Author
+
+**Priya Koppuravuri**
